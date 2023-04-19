@@ -8,7 +8,7 @@ import Article from "./Article";
                 key = {id}
                 title = {title}
                 date = {date}
-                perview = {preview}
+                preview = {preview}
                 minutes = {minutes}
                 />
             ))}

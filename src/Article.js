@@ -1,11 +1,11 @@
 import React from "react";
 
-function Article ({title ,date = "January 1, 1970",preview, min}){
+function Article ({title ,date = "January 1, 1970",preview, minutes}){
     return (
         <article>
             <h3>{title}</h3>
             <small>
-                {date}.{min}  {" "}
+                {date} <br /> Minutes: {minutes}    {" "}
             </small>
             <p>{preview}</p>
         </article>
