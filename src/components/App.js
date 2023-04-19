@@ -1,15 +1,22 @@
 import React from "react";
 import blogData from "../data/blog";
+import AboutCard from "../About"
+import HeaderCard from "../Header"
+import ArticleList from "../ArticleList"
+
+const {name,image, about,posts ,preview}=blogData;
 
 console.log(blogData);
 
 function App() {
   return (
     <div className="App">
-      You're on your own from here! Follow the deliverables; test things out in
-      the browser as you write your code; and good luck!
+      <HeaderCard name={name} />
+      <AboutCard image={image} about = {about} preview={preview}/>
+      <ArticleList post= {posts}/>
     </div>
   );
+
 }
 
 export default App;
